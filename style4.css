@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #F4F4F4; /* Light grey background */
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Section */
+section:first-of-type {
+    background-color: #333; /* Dark grey header background */
+    color: #FFD3B6; /* Light yellow */
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+section:first-of-type:hover {
+    background-color: #444; /* Darker grey on hover */
+}
+
+section:first-of-type .content-box h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: #ce9e19; /* Yellow */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+section:first-of-type .content-box h1:hover {
+    color: #FFA500; /* Orange-yellow on hover */
+}
+
+/* General Section Styling */
+section {
+    margin: 20px 0;
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section .content-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Heading */
+section h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+section h2:hover {
+    color: #ce9e19; /* Yellow */
+}
+
+/* Paragraph Styling */
+section p {
+    font-size: 1.2rem;
+    color: #666; /* Darker grey */
+    margin: 10px 0 20px;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+section p:hover {
+    color: #333;
+}
+
+/* Link (Button-like GitHub Link & Website Link Styling) */
+a {
+    display: inline-block;
+    background-color: #ce9e19; /* Yellow */
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: #FFA500; /* Darker yellow */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #707B7C;
+    margin: 30px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    a {
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 2.3rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    a {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 0.8rem;
+    }
+
+    a {
+        padding: 6px 12px;
+    }
+}
